@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from "react-router-dom"
+import {Container} from "react-bootstrap"
+
+import { Dany } from "./pages/Dany";
+import { Simon } from "./pages/Simon";
+import { Brandon } from "./pages/Brandon";
+import { Dayeza } from "./pages/Dayeza";
+import { Johan } from "./pages/Johan";
+import { Home } from "./pages/Home";
+
+import{NavBar} from "./components/NavBar";
+import Inicial from "./pages/Inicial";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Container className="mb-4">
+        <Routes>
+
+          <Route path="/" element={<Inicial/>} />
+          <Route path="/Home" element={<Home/>} />
+          <Route path="/Dany" element={<Dany/>} />
+          <Route path="/Simon" element={<Simon/>} />
+          <Route path="/Brandon" element={<Brandon/>} />
+          <Route path="/Dayeza" element={<Dayeza/>} />
+          <Route path="/Johan" element={<Johan/>} />
+
+        </Routes>
+      </Container>
+    </>
   );
 }
 

@@ -1,0 +1,418 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+
+}
+
+:root{
+    --color1 : #ff8482 ;
+    --color2 : #ffb294 ;
+    --color3 : #f8d8a5 ;
+    --color4 : #91be95 ;
+    --color5 : #635a49 ;
+}
+
+
+/**     img      **/
+img{
+    max-width: 100%;
+    
+    
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--color_inicial);
+    font-family: 'Bitter', serif;
+    line-height: 1.6;
+    background-color: rgb(182, 196, 176);
+    
+}
+/**  css globales **/
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2 { 
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+
+h1,h2,h3{
+ 
+    text-align: center;
+    
+    font-family: var(--fuente_txt);
+    
+}
+
+p{
+    font-size: 1.3rem;
+    color: var(--white);
+    color: black;
+    font-family:var(--fuete_txt);
+
+}
+
+
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* padding:2rem; */
+}
+/* Imagenes */
+.img1{
+    /* background-image: url(../asserts/img/test1.png); */
+    padding: 7rem;
+    background-image: url(../asserts/img/test1.png);
+    background-repeat: no-repeat;
+    
+}
+
+.img2{
+    /* background-image: url(../asserts/img/test1.png); */
+    padding: 7rem;
+    background-image: url(../asserts/img/test2.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+.img3{
+    /* background-image: url(../asserts/img/test1.png); */
+    padding: 7rem;
+    background-image: url(../asserts/img/test3-verde.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+
+.img4{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test4.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img5{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test5.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img6{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test6-verde.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img7{
+   
+    height:39rem;
+    width: 40rem;
+    background-image: url(../asserts/img/test7.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+.img8{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test8.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+.img9{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test9.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+
+.img10{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test10.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.img11{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test11.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img12{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test12.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img13{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test11.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img14{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test14.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img15{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test15.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img16{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test15-substractExcedingLowerLimit.PNG);
+    background-repeat: no-repeat;
+    height:20rem;
+    
+}
+.img17{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test16.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img18{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test17.PNG);
+    background-repeat: no-repeat;
+    height:40rem;
+}
+.img19{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test18-verde.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img20{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test19.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img21{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test19SubstractExcedingLowerLimit-verde.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img22{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test20.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img23{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test21.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img24{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test22-verde.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img25{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test23.PNG );
+    background-repeat: no-repeat;
+ 
+}
+.img26{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test24.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img27{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test25.PNG);
+    background-repeat: no-repeat;
+    height:20rem;
+    
+}
+.img28{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test26.PNG);
+    background-repeat: no-repeat;
+    height:20rem;
+    
+}
+.img29{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test27-verde.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img30{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test28.PNG);
+    background-repeat: no-repeat;
+    
+}
+.img31{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test29.PNG);
+    background-repeat: no-repeat;
+    height:47rem;
+    
+}
+.img32{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test31.PNG);
+    background-repeat: no-repeat;
+    height:35rem;
+    
+}
+.img33{
+   
+    padding: 7rem;
+    background-image: url(../asserts/img/test21.PNG);
+    background-repeat: no-repeat;
+    
+}
+
+
+/* texts */
+.contenido{
+    font-size:2rem;
+    font-family: 'Indie Flower', cursive;
+    background-color: var(--color4);
+    border-radius: 1rem;
+
+
+}
+
+
+/*duplic img*/
+.contanier-imgDuplic{
+    padding:2rem;
+}
+
+
+
+/* home div */
+
+
+.home-div{
+    background-color:var(--color4);
+    border-radius: 2rem;
+    text-align:center;
+    font-size:1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 1000;
+
+}
+
+
+/* NAV */
+.nav{
+    background-color:var(--color3);
+    text-align: center;
+   
+}
+
+/*navegacion*/
+.navegacion{
+    /* background-color:blue; */
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans Mono', monospace
+}
+a:hover{
+    background-color:var(--color1);
+    border-radius: 1rem;
+}
+.navegaciones{
+    background-color:var(--color3);
+    border-radius: 1rem;
+}
+/* coments*/
+.coments{
+    background-color:var(--color2);
+    border-radius: 1rem;
+    font-weight: 1000;
+    font-family: 'Ubuntu', sans-serif;
+
+
+
+}
+
+
+
+/*grids*/
+
+.grid-johan{
+    display:grid;    
+}
+
+.grid-dayeza{
+    display:grid;    
+}
+
+.grid-simon{
+    display:grid;    
+}
+
+.grid-brandon{
+    display:grid;    
+}
+
+.grid-dany{
+    display:grid;    
+}
